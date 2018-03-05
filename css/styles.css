@@ -1,0 +1,260 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Spinnaker", sans-serif;
+}
+
+body {
+	padding: 10px;
+}
+
+
+/* HEADER */
+.nav-and-logo {
+	max-width: 1000px;
+	height: 96px;
+	margin: 20px auto 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 0 0 15px 1px #aaa;
+	background-color: #fff;
+	display: flex;
+}
+
+.logo {
+	margin: -5px 10px 10px 40px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	transition: 0.5s;
+}
+
+.ion-ios-monitor {
+	font-size: 80px;
+}
+
+.logo-text {
+	min-width: 81px;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 1px 1px 4px #333;
+	margin-top: -20px;
+}
+
+.nav {
+	height: 100%;
+	margin-left: auto;
+	list-style: none;
+	display: flex;
+  	align-items: center;
+}
+
+.nav-a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 16px;
+	padding: 40px;
+	transition: 0.5s;
+	text-shadow: 1px 1px 4px #888;
+}
+
+.nav-a:hover {
+	color: #fff;
+	text-shadow: 1px 1px 4px #000;
+	transform: scale(1.05);
+}
+
+
+/* ABOUT */
+.about {
+	background: url(../img/main-high-res.jpg) center / cover;
+	max-width: 1000px;
+	height: 400px;
+	margin: 0 auto;
+	padding-top: 15%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0 5px 10px 1px #aaa;
+}
+
+.about-name {
+	font-size: 80px;
+	color: #fff;
+	text-shadow: 0 0 20px #000;
+	text-align: center;
+}
+
+.about-title {
+	font-size: 35px;
+	padding: 0 20px;
+	color: #fff;
+	text-shadow: 0 0 20px #000;
+	text-align: center;
+}
+
+
+/* PROJECTS */
+.projects {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 30px;
+}
+
+.project {
+	width: 33.333333%;
+	box-sizing: border-box;
+	margin-right: 30px;
+	padding-top: 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 15px 2px #aaa;
+	transition: 0.5s;
+}
+
+.project:hover {
+	transform: scale(1.05);
+	box-shadow: none;
+	border: 1px solid #ccc;
+}
+
+.project:last-of-type {
+	margin-right: 0;
+}
+
+.project-img {
+	width: 100%;
+}
+
+.project-a {
+	text-decoration: none;
+	color: #333;
+}
+
+.ion-social-codepen {
+	font-size: 30px;
+}
+
+
+/* CONTACT */
+.contact {
+	max-width: 1000px;
+	margin: 30px auto 40px;
+	padding: 20px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0 0 15px 1px #aaa;
+	box-sizing: border-box;
+	font-size: 25px;
+}
+
+.contact-phone-internet {
+	list-style: none;
+	width: 50%;
+	text-align: center;
+	color: #333;
+	text-shadow: 1px 1px 4px #333;
+}
+
+.contact-social-media {
+	list-style: none;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-a {
+	text-decoration: none;
+	font-size: 40px;
+	text-align: center;
+	color: #777;
+	margin: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 15px 1px #aaa;
+	border-radius: 5px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	transition: 0.5s;
+}
+
+.contact-a:hover {
+	box-shadow: none;
+	transform: scale(1.2);
+}
+
+.ion-social-facebook {
+	color: #3b5998;
+}
+
+.ion-social-twitter {
+	color: #00aced;
+}
+
+.ion-social-linkedin {
+	color: #0077B5;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width:750px) {
+	.nav-a {
+		padding: 20px;
+	}
+	
+	.about-name {
+		font-size: 55px;
+	}
+	
+	.about-title {
+		font-size: 25px;
+	}
+	
+	.contact {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:550px) {
+	.nav-and-logo {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.logo {
+		margin: 0;
+	}
+	
+	.nav {
+		margin: 0 auto;
+	}
+
+	.nav-a {
+		padding: 10px;
+	}
+
+	.about {
+		background: url(../img/main-low-res.jpg) center / cover;
+	}
+
+	.project {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.projects,
+	.contact {
+		flex-direction: column;
+	}
+	
+	.contact-phone-internet,
+	.contact-social-media {
+		width: 100%;
+	}
+}
